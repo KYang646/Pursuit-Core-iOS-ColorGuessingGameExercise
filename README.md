@@ -4,6 +4,8 @@ Welcome Developers!  Here is your in-class exercise for today:
 
 ## Overview
 
+This is a re-do of an older assignment.
+
 The name of the game is generating and guessing random colors.
 
 Have the app generate and display a random color from RGB values.

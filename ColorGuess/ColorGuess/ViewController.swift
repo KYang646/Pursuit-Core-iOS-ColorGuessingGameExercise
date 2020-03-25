@@ -8,7 +8,13 @@
 
 import UIKit
 
-
+struct ColorChange {
+    
+    var red = CGFloat.random(in: 0..<1)
+    var green = CGFloat.random(in: 0..<1)
+    var blue = CGFloat.random(in: 0..<1)
+    
+}
 
 
 class ViewController: UIViewController {
@@ -29,12 +35,16 @@ class ViewController: UIViewController {
         
         colorSquare.backgroundColor = UIColor(red: CGFloat(redC), green: CGFloat(greenC), blue: CGFloat(blueC), alpha: 1)
     }
+        
     
-        // This button calls the colorGenerate function
+  
+    // This button calls the colorGenerate function
     @IBAction func generate(_ sender: Any) {
         colorGenerate()
     }
     
+        weak var gValue: UILabel!
+    self.gValue.text = greenC
     
 //    @IBAction func blueCheck(_ sender: Any) {
 //
@@ -57,4 +67,5 @@ class ViewController: UIViewController {
     
     
 }
+
 
